@@ -27,13 +27,13 @@ do
    pirnt_header > vpn.txt
    username=$(pwgen -1)
    password=$username
-   #useradd -s /bin/false -e `date -d "$DAYS_OF_VALIDATION days" +"%Y-%m-%d"` $username
-   #echo "${username}:${password}" | chpasswd
+   useradd -s /bin/false -e `date -d "$DAYS_OF_VALIDATION days" +"%Y-%m-%d"` $username
+   echo "${username}:${password}" | chpasswd
    echo -e "$username\thard\tmaxlogins\t1">> /etc/security/limits.conf
    pirnt_config_info >> vpn.log
    pirnt_config_info >> vpn.txt
    pirnt_config_info 
-   #python3 bot.py
+   python3 bot.py
 done
 echo -e "$num acccounts has been created"
 
