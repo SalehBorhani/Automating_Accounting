@@ -1,5 +1,7 @@
 #! /bin/bash
 read -p "Enter the number of users to create: " num
+
+
 echo -e "$(date +%Y-%m-%d)\nSSH Host:\n$(hostname -I | cut -d ' ' -f 1)\nPort: $(grep -w Port /etc/ssh/sshd_config | cut -d ' ' -f 2)\nExpiration: $(date -d "38 days" +"%Y-%m-%d")\n\n">> vpn.log
 echo -e "$(date +%Y-%m-%d)\nSSH Host:\n$(hostname -I | cut -d ' ' -f 1)\nPort: $(grep -w Port /etc/ssh/sshd_config | cut -d ' ' -f 2)\nExpiration: $(date -d "38 days" +"%Y-%m-%d")\n\n" > vpn.txt
 for i in $(seq 1 $num)
@@ -16,3 +18,4 @@ do
 done
 echo -e "$num acccounts has been created"
 python3 bot.py
+
