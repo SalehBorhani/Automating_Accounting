@@ -5,7 +5,7 @@ def send_message(text):
     data = {"chat_id": "chat_id", "text": text}
     requests.post(url, data=data)
 
-f = open("t.txt", "r")
+f = open("vpn.txt", "r")
 text = f.read()
 send_message(text)
 f.close()
