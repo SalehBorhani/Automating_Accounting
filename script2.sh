@@ -1,6 +1,6 @@
 #! /bin/bash
 read -p "Enter the number of users to create: " num
-echo -e "$(date +%Y-%m-%d)\n SSH Host:\t$(hostname -I)\n $(grep -w Port /etc/ssh/sshd_config)\nexpiration\t$(date -d "38 days +"%Y-%m-%d)\n\n">> vpn.txt
+echo -e "$(date +%Y-%m-%d)\n SSH Host:\t$(hostname -I)\n $(grep -w Port /etc/ssh/sshd_config)\nexpiration\t$(date -d "38 days" +"%Y-%m-%d")\n\n">> vpn.txt
 for i in $(seq 1 $num)
 do
     username=$(pwgen -1)
