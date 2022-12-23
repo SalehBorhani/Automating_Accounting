@@ -9,7 +9,7 @@ $ sudo apt update && sudo apt install git pwgen python3
 ```
 then clone the repository in the server and change directory to the repository
 ```
-$ git clone https://github.com/ArmanTaheriGhaleTaki/Automating_Accounting.git && cd Automating_Accounting
+$ git clone https://github.com/SalehBorhani/Automating_Accounting.git && cd Automating_Accounting
 ```
 and run the script 
 ```
@@ -27,7 +27,7 @@ You have to get an *HTTP API* from [BotFather](https://t.me/BotFather). It's som
 `
 8652396160:AHFaNEeiMo8AHq_yK_Bo3KLM5xLqE0jZQJs
 `    
-And add it to the line 4 in [bot.py](https://github.com/ArmanTaheriGhaleTaki/Automating_Accounting/blob/master/bot.py) instead of 
+And add it to the line 4 in [bot.py](https://github.com/SalehBorhani/Automating_Accounting/blob/master/bot.py) instead of 
 `<Token>`
 
 Then create a group in telegram and add the bot to the group then copy the link of the group via *telegram web*. It's something like this : 
